@@ -1,0 +1,354 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Just Ask!! - Home</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" >
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+<link  rel="stylesheet" type="text/css" href="resources/css/jaHome.css" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="resources/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="resources/js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="resources/js/jquery.gridnav.js"></script>
+<script type="text/javascript" src="resources/js/jaHome.js"></script>
+<script type="text/javascript">
+			$(function() {
+				$('#tj_container').gridnav({
+					type	: {
+						mode		: 'disperse', 	// use def | fade | seqfade | updown | sequpdown | showhide | disperse | rows
+						speed		: 300,			// for fade, seqfade, updown, sequpdown, showhide, disperse, rows
+						easing		: '',			// for fade, seqfade, updown, sequpdown, showhide, disperse, rows	
+						factor		: '',			// for seqfade, sequpdown, rows
+						reverse		: ''			// for sequpdown
+					}
+				});
+			});
+		</script>
+</head>
+<body id="page-top">
+
+	
+<nav id="mainNav" class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><span class="colorChange">Just</span> <span class="changeCream">Ask!!</span></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about"><strong>About</strong></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+	
+	<div class="container" >
+		<div id="corossal-container">
+			<div class="container">
+			
+			<div class="content example8">
+				<div id="tj_container" class="tj_container">
+					<div class="tj_nav">
+						<span id="tj_prev" class="tj_prev">Previous</span>
+						<span id="tj_next" class="tj_next">Next</span>
+					</div>
+					<div class="tj_wrapper">
+						<ul class="tj_gallery">
+							<li><a href="#"><img src="resources/images/b1.jpg" alt="image01" /></a></li>
+							<li><a href="#"><img src="resources/images/2.jpg" alt="image02" /></a></li>
+							<li><a href="#"><img src="resources/images/3.jpg" alt="image03" /></a></li>
+							<li><a href="#"><img src="resources/images/4.jpg" alt="image04" /></a></li>
+							<li><a href="#"><img src="resources/images/5.jpg" alt="image05" /></a></li>
+							<li><a href="#"><img src="resources/images/6.jpg" alt="image06" /></a></li>
+							<li><a href="#"><img src="resources/images/7.jpg" alt="image07" /></a></li>
+							<li><a href="#"><img src="resources/images/8.jpg" alt="image08" /></a></li>
+							<li><a href="#"><img src="resources/images/9.jpg" alt="image09" /></a></li>
+							<li><a href="#"><img src="resources/images/10.jpg" alt="image10" /></a></li>
+							<li><a href="#"><img src="resources/images/11.jpg" alt="image11" /></a></li>
+							<li><a href="#"><img src="resources/images/12.jpg" alt="image12" /></a></li>
+							<li><a href="#"><img src="resources/images/13.jpg" alt="image13" /></a></li>
+							<li><a href="#"><img src="resources/images/14.jpg" alt="image14" /></a></li>
+							<li><a href="#"><img src="resources/images/15.jpg" alt="image15" /></a></li>
+							<li><a href="#"><img src="resources/images/16.jpg" alt="image16" /></a></li>
+							<li><a href="#"><img src="resources/images/17.jpg" alt="image17" /></a></li>
+							<li><a href="#"><img src="resources/images/18.jpg" alt="image18" /></a></li>
+							<li><a href="#"><img src="resources/images/19.jpg" alt="image19" /></a></li>
+							<li><a href="#"><img src="resources/images/20.jpg" alt="image20" /></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		
+			
+		</div>
+		
+			
+		</div><!-- end of corossal container -->
+		
+		<div class="relative">
+		<p>We've got what you need!</p>
+		</div>
+		
+		<div class="signup col-xs-12">
+		<h2 id="signInForm">Sign In</h2>
+		
+		<form class="form-horizontal toggleClass" action="j_security_check" METHOD="POST">
+		  <div class="form-group">
+		    <div class="col-sm-8">
+		      <input type="text" name="j_username" class="form-control" id="inputEmail3" placeholder="Email">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		 	<div class="col-sm-8">
+		      <input type="password" name="j_password" class="form-control" id="inputPassword3" placeholder="Password">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <div class="col-sm-8">
+		      <div class="checkbox">
+		        <label>
+		          <input type="checkbox"> Remember me
+		        </label>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <div class="col-sm-10">
+		      <button type="submit" class="btn btn-success btnblock">Sign in</button>
+		    </div>
+		  </div>
+		</form>
+		<h2>Sign Up</h2>
+		<!--  <div class="col-sm-12"> -->
+		<button type="button" class="btn btn-info btnblock">As User</button><!-- </div> -->
+		 <!-- <div class="col-sm-12"> --><br>
+		<button type="button" class="btn btn-warning btnblock">As Owner</button><!-- </div> -->
+			
+
+			<!-- Contextual button for informational alert messages -->
+			
+		</div>
+		
+		
+	<div class="signupSmallScreen col-xs-12 col-sm-12 col-md-12">
+		<div class="col-sm-8 col-md-8">
+		<h2 id="signInForm">Sign In</h2>
+		
+		<form class="form-horizontal toggleClass">
+  <div class="form-group">
+    <div class="col-sm-8">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+ 	<div class="col-sm-8">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-8">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-success btnblock">Sign in</button>
+    </div>
+  </div>
+</form>
+</div><!-- sign in subform for small screen-->
+<div class="col-sm-4 col-md-4">
+		<h2>Sign Up</h2>
+		<!--  <div class="col-sm-12"> -->
+		<button type="button" class="btn btn-info btnblock">As User</button><!-- </div> -->
+		 <!-- <div class="col-sm-12"> --><br>
+		<button type="button" class="btn btn-warning btnblock">As Owner</button><!-- </div> -->
+			
+
+			<!-- Contextual button for informational alert messages -->
+			</div><!-- sign upsubform for small screen-->
+		</div>
+<!-- 	<div id="customizeCarousal1">
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    Indicators
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    Wrapper for slides
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="resources/images/Bg2.jpg" alt="Chania" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="resources/images/Bg4.jpg" alt="Chania" width="460" height="345">
+      </div>
+    
+      <div class="item">
+        <img src="resources/images/Bg3.jpg" alt="Flower" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="resources/images/Bg1.jpg" alt="Flower" width="460" height="345">
+      </div>
+    </div>
+
+    Left and right controls
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  </div>end of customize Carousal
+  	
+	<div id="customizeCarousal2">
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    Indicators
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    Wrapper for slides
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="resources/images/Bg2.jpg" alt="Chania" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="resources/images/Bg4.jpg" alt="Chania" width="460" height="345">
+      </div>
+    
+      <div class="item">
+        <img src="resources/images/Bg3.jpg" alt="Flower" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="resources/images/Bg1.jpg" alt="Flower" width="460" height="345">
+      </div>
+    </div>
+
+    Left and right controls
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  </div>end of customize Carousal
+   -->
+		<%-- 
+     <%@include  file="/resources/typed.js-master/index.htm" %>
+     
+   --%>    
+	</div>
+	
+	<div>	
+    <section  id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">We've got what you need!</h2>
+                    <hr class="light">
+                    <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+                    <a href="#" class="btn btn-default btn-xl">Get Started!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">At Your Service</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-diamond wow bounceIn text-info"></i>
+                        <h3>Sturdy Templates</h3>
+                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-warning" data-wow-delay=".1s"></i>
+                        <h3>Ready to Ship</h3>
+                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-success" data-wow-delay=".2s"></i>
+                        <h3>Up to Date</h3>
+                        <p class="text-muted">We update dependencies to keep things fresh.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart wow bounceIn text-danger" data-wow-delay=".3s"></i>
+                        <h3>Made with Love</h3>
+                        <p class="text-muted">You have to make your websites with love these days!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   	 </section>
+		
+</div><!-- Container black -->
+	
+</body>
+</html>
