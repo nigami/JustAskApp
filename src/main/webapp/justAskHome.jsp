@@ -21,6 +21,7 @@
 <script type="text/javascript" src="resources/js/jquery.gridnav.js"></script>
 <script type="text/javascript" src="resources/js/jaHome.js"></script>
 <script type="text/javascript">
+
 			$(function() {
 				$('#tj_container').gridnav({
 					type	: {
