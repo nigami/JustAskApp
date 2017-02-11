@@ -6,6 +6,14 @@ body{
     background-repeat: no-repeat;
    
 }
+div #errorSignIn{
+	color: red;
+	font-size:13px;
+}
+#errorUsername{
+	color: white;
+	font-size:12px;
+}
 .colorChange{
 	font-family:verdana, arial, helvetica, sans-serif; 
     font-size:2.0em; 
@@ -271,4 +279,26 @@ DISPARSE */
 	height:50%;
 } */
 
+
+.modal-footer{
+    text-align: left;    
+}
+
+.form-inline .form-group {
+    margin-bottom: 11px;
+}
+
+.form-inline .control-label {
+    width: 110px;
+    text-align:right;
+    margin-right: 10px;
+}
+
+.labelColor{
+	color: green;
+}
+
+#addrDetails{
+	display:none;
+}
 

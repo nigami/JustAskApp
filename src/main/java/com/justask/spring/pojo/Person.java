@@ -8,33 +8,53 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
-import javax.persistence.OneToOne;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
+import org.codehaus.jackson.annotate.JsonIgnore;
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
-@Table(name="person")
-@Inheritance(strategy= InheritanceType.JOINED)
+@Table(name="personSampleTable")
+@Inheritance(strategy=InheritanceType.JOINED)
 public class Person {
-	
+
 	@Id
+	@Column(name="personID",unique=true, nullable=false)
 	@GeneratedValue
-	@Column(name="personId",unique=true, nullable=false)
-	private int personId;
+	private long personId;
 	
+	@NotNull
+	@Size(min=4,max=15)
+	@NotEmpty(message = "Please enter your First Name")
 	private String firstName;
 	
 	private String lastName;
 	
-	private long phoneNum;
-	
+	@Email
+	@NotNull(message= "Please enter your Email id")
 	private String email;
 	
-	@OneToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL, mappedBy="person")
-	private Address address;
-
+	@ManyToOne(fetch=FetchType.EAGER,cascade= CascadeType.ALL)
+	//@JoinColumn(name="personId")
+	
+	private Address address;	
+	 
 	public Person(){
 		address= new Address();
 	}
+	
+	public long getPersonId() {
+		return personId;
+	}
+
+	public void setPersonId(long personId) {
+		this.personId = personId;
+	}
+
 	public String getFirstName() {
 		return firstName;
 	}
@@ -51,14 +71,6 @@ public class Person {
 		this.lastName = lastName;
 	}
 
-	public long getPhoneNum() {
-		return phoneNum;
-	}
-
-	public void setPhoneNum(long phoneNum) {
-		this.phoneNum = phoneNum;
-	}
-
 	public String getEmail() {
 		return email;
 	}
@@ -66,19 +78,14 @@ public class Person {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
+	
+	@JsonIgnore
 	public Address getAddress() {
 		return address;
 	}
 
 	public void setAddress(Address address) {
 		this.address = address;
-	}
-	public int getPersonId() {
-		return personId;
-	}
-	public void setPersonId(int personId) {
-		this.personId = personId;
 	}
 	
 	

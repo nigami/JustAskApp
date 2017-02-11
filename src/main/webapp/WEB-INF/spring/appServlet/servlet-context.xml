@@ -21,8 +21,52 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.justask.spring" />
+	<context:component-scan base-package="com.justask.spring" /> 
+	<context:property-placeholder location="classpath*:application.properties"/>
 	
+	<!-- <session-management>
+     <concurrency-control max-sessions="1" error-if-maximum-exceeded="true" />
+  	</session-management>
+   -->
+	<interceptors>
+		<interceptor>
+			<mapping path="/dashboard.htm" />
+			<beans:bean class="com.justask.spring.interceptor.DashboardInterceptor" />
+		</interceptor>
+	</interceptors>
 	
+	<beans:bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">  
+		<beans:property name="host" value="smtp.gmail.com" />  
+		<beans:property name="port" value="587" />
+	    <beans:property name="username" value="isayhi1989@gmail.com" />  
+	    <beans:property name="password" value="HappyIla" />  
+	    <beans:property name="javaMailProperties">  
+	       <beans:props>  
+	              <beans:prop key="mail.smtp.auth">true</beans:prop>  
+	              <beans:prop key="mail.smtp.socketFactory.port">465</beans:prop>  
+	              <beans:prop key="mail.smtp.socketFactory.class">javax.net.ssl.SSLSocketFactory</beans:prop>  
+	              <beans:prop key="mail.smtp.port">465</beans:prop>  
+	        </beans:props>  
+	    </beans:property>  
+	</beans:bean>
 	
+	 <!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
+         <beans:bean id="tilesViewResolver"    class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+        <beans:property name="viewClass">
+            <beans:value>
+                org.springframework.web.servlet.view.tiles3.TilesView
+            </beans:value>
+        </beans:property>
+        <beans:property name="order" value="0"/>
+    </beans:bean>
+       
+    <beans:bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+        <beans:property name="definitions">
+            <beans:list>
+                <beans:value>/WEB-INF/spring/tiles.xml</beans:value>
+                <beans:value>WEB-INF/views/views.xml</beans:value>
+            </beans:list>
+        </beans:property>
+    </beans:bean>
+  
 </beans:beans>

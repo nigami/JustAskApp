@@ -1,0 +1,38 @@
+@CHARSET "ISO-8859-1";
+
+
+body{
+	background-color: black;
+}
+
+.mainContainer{
+	height:1000px;
+	border:1px solid black;
+	padding-top:50px;
+		
+}
+
+.container-fluid{
+background-color: black;	
+}
+.button{
+	margin: auto auto;
+	padding-top: 150px;
+	padding-left: 40%;
+	/* border: 1px solid #fff; */
+}
+.header{
+	border: 1px solid black;
+}
+
+.customizeHeading{
+	padding-left: 30%;
+	color: green ;
+	/* border: 1px solid #fff; */
+}
+
+.customBtn{
+	width: 200px;
+	height: 80px;
+	font-size: 50px;	
+}

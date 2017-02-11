@@ -2,69 +2,78 @@ package com.justask.spring.pojo;
 
 import java.util.Date;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.PrimaryKeyJoinColumn;
-import javax.persistence.PrimaryKeyJoinColumns;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+import javax.persistence.Transient;
 
 @Entity
 @Table(name="review")
-@PrimaryKeyJoinColumns({
-    @PrimaryKeyJoinColumn(name="venueId", 
-        referencedColumnName="venueId"),
-    @PrimaryKeyJoinColumn(name="userId",
-        referencedColumnName="userId")
-})
 public class Review {
 
 	@Id
 	@GeneratedValue
 	@Column(name="reviewId", nullable=false, unique=true)
-	private String reviewId;
+	private int reviewId;
 	
 	@Column(name="venueType")
 	private String venueType;
-	
-	@Column(name="venueId")
-	private int venueId;
-	
+		
 	@Column(name="dateOfReview")
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date dateOfReview;
 	
-	@Column(name="desc")
+	@Column(name="reviewDesc")
 	private String description;
 	
-	@Column(name="userId")
-	private int userId;
+	
+	@ManyToOne(fetch=FetchType.LAZY)
+	private User user;
 	
 	@Column(name="costEff")
 	private double costEff;
 	
 	@Column(name="rating")
 	private int rating;
-
+	/*
+	@ManyToOne(fetch=FetchType.EAGER,cascade=CascadeType.ALL)
+	@JoinColumn(name="venue")
+	private Venue venue;
+	*/
+	
+	private  int venueId;
+	
+	@Transient
+	private String venueName;
+	
 	public Review(){
 		
 	}
-	public String getReviewId() {
+
+
+	public int getReviewId() {
 		return reviewId;
 	}
 
-	public void setReviewId(String reviewId) {
+
+	public void setReviewId(int reviewId) {
 		this.reviewId = reviewId;
 	}
+
 
 	public int getVenueId() {
 		return venueId;
 	}
-
 	public void setVenueId(int venueId) {
 		this.venueId = venueId;
 	}
-
 	public Date getDateOfReview() {
 		return dateOfReview;
 	}
@@ -81,14 +90,12 @@ public class Review {
 		this.description = description;
 	}
 
-	public int getUserId() {
-		return userId;
+	public User getUser() {
+		return user;
 	}
-
-	public void setUserId(int userId) {
-		this.userId = userId;
+	public void setUser(User user) {
+		this.user = user;
 	}
-
 	public double getCostEff() {
 		return costEff;
 	}
@@ -110,6 +117,11 @@ public class Review {
 	public void setVenueType(String venueType) {
 		this.venueType = venueType;
 	}
-	
-	
+/*	
+	public Venue getVenue() {
+		return venue;
+	}
+	public void setVenue(Venue venue) {
+		this.venue = venue;
+	}*/
 }

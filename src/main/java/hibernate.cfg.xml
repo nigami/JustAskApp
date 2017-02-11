@@ -2,19 +2,27 @@
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
                                          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
-	<session-factory>
-		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/justAskProj</property>
-		<property name="hibernate.connection.username">root</property>
-		<property name="hibernate.connection.password">HappyIla</property>
-
-		<property name="hibernate.hbm2ddl.auto">create</property>
-		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-		<property name="hibernate.show_sql">true</property>
-
-		<mapping class="com.justask.spring.pojo.User" />
-		<mapping class="com.justask.spring.pojo.Address" />
-		<mapping class="com.justask.spring.pojo.Person" />
-		<mapping class="com.justask.spring.pojo.Review" />
-	</session-factory>
+ <session-factory name="">
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/justaskprojdb</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.connection.password">HappyIla</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="hibernate.show_sql">true</property>
+  <property name="hibernate.search.default.directory_provider">filesystem</property>
+  <property name="hibernate.search.default.indexBase">/Users/ilanigam17/Documents/STS/Workspace/JustAskApp/indexes</property>
+  
+  <property name="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</property>
+  <property name="hibernate.cache.use_second_level_cache">true</property>
+ 
+  <mapping class="com.justask.spring.pojo.User"/>
+  <mapping class="com.justask.spring.pojo.Address"/>
+  <mapping class="com.justask.spring.pojo.Person"/>
+  <mapping class="com.justask.spring.pojo.Review"/>
+  <mapping class="com.justask.spring.pojo.Venue"/>
+  <mapping class="com.justask.spring.pojo.Advertisement"/>
+  <!-- <mapping class="com.justask.spring.pojo.AddressSample" />
+		<mapping class="com.justask.spring.pojo.PersonSample" /> -->
+ </session-factory>
 </hibernate-configuration>

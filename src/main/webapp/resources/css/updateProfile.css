@@ -1,0 +1,85 @@
+@CHARSET "ISO-8859-1";
+
+body nav.navbar{
+	background-color: #421c52;
+}
+
+.topPaddingContainer{
+	padding-top:50px;
+}
+
+#navPillSection{
+	padding-top:25px;
+}
+
+.leftPanelSection{
+	
+	height: 100%;
+	width:200px;
+}
+.headingbackground{
+	background-color: #fbf7f2;
+}
+.askForUpdateHeading{
+	
+	height: 170px;
+	width:100%;
+	/* border:1px solid grey;
+	 */
+	
+}
+
+.tab-pane{
+	padding-left: 50px;
+}
+
+#personalConfSection{
+	display:none;
+}
+
+#menu1{
+	/* border: 1px solid black; */
+}
+
+.editGlyph{
+	padding-top: 10px;
+	color: blue;
+}
+
+#passwordUpdateSec{
+	display:none;
+}
+
+#usernameError{
+	color: red;
+	font-size: 1.5em;
+/* 	input, textarea{
+    background-color:green;
+    color: #FFF; */
+}
+
+#passwordError,#passwordValidation, #addrMessage{
+	color: red;
+	font-size: 1.5em;
+}
+
+.accountBtnDisplay{
+	display:none;
+}
+
+#savedUser{
+	display: none;
+}
+
+#savedPassword{
+	display: none;
+}	
+#addressUpdateBtn{
+	text-align:center;
+margin:auto;
+}
+
+
+.btmPaddding{
+	padding-left:50px;
+}

@@ -9,25 +9,6 @@
 			<param name="ConversionPattern" value="%-5p: %c - %m%n" />
 		</layout>
 	</appender>
-	  <appender name="ASYNC" class="org.apache.log4j.AsyncAppender">  
-        <appender-ref ref="CONSOLE" />  
-        <appender-ref ref="FILE" />  
-</appender>  
-<appender name="FILE" class="org.apache.log4j.RollingFileAppender">  
-    <param name="File" value="C:/javatpointlog.log" />  
-    <param name="MaxBackupIndex" value="100" />  
- <layout class="org.apache.log4j.PatternLayout">  
-  <param name="ConversionPattern" value="[%d{dd/MM/yy hh:mm:ss:sss z}] %5p %c{2}: %m%n" />  
-</layout>  
-</appender>
-
- <category name="org.hibernate">  
-        <priority value="DEBUG" />  
-    </category>  
-    <category name="java.sql">  
-        <priority value="debug" />  
-    </category>  
-  
 	
 	<!-- Application Loggers -->
 	<logger name="com.justask.spring">
@@ -51,9 +32,7 @@
 		<level value="info" />
 	</logger>
 
-
 	<!-- Root Logger -->
-	
 	<root>
 		<priority value="warn" />
 		<appender-ref ref="console" />
